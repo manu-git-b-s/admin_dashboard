@@ -1,8 +1,10 @@
+import Topbar from "./components/Topbar/Topbar";
+
 function App() {
   return (
-    <>
-      <h1>Admin Dashboard</h1>
-    </>
+    <div>
+      <Topbar />
+    </div>
   );
 }
 
