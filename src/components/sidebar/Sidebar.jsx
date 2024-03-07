@@ -13,6 +13,7 @@ import {
   Report,
 } from "@mui/icons-material";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -38,10 +39,12 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item ">
-              <PermIdentity className="icon" />
-              Users
-            </li>
+            <Link to="/users">
+              <li className="sidebar-list-item ">
+                <PermIdentity className="icon" />
+                Users
+              </li>
+            </Link>
             <li className="sidebar-list-item ">
               <Storefront className="icon" />
               Products
