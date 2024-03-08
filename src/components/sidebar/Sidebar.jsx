@@ -39,16 +39,18 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <Link to="/users">
+            <Link to="/users" className="link">
               <li className="sidebar-list-item ">
                 <PermIdentity className="icon" />
                 Users
               </li>
             </Link>
-            <li className="sidebar-list-item ">
-              <Storefront className="icon" />
-              Products
-            </li>
+            <Link to="/products" className="link">
+              <li className="sidebar-list-item ">
+                <Storefront className="icon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebar-list-item">
               <AttachMoney className="icon" />
               transactions
